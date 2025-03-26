@@ -8,13 +8,14 @@ namespace HelloWorld
   {
     static void Main(string[] args)
     {
-     List<string> arr = SeperateInput("8 88777444666*664#");
+     string Input ="2 22 222";
+     List<string> arr = SeperateInput(Input);
       
-      Console.WriteLine("Segments:");
+      /*Console.WriteLine("Segments:");
         foreach (var segment in arr)
         {
             Console.WriteLine(segment);
-        }
+        }*/
         
         String str=OldPhonePad(arr);
         Console.WriteLine(str);
@@ -24,7 +25,7 @@ namespace HelloWorld
        //string pattern = @"([a-zA-Z0-9]+|[\*\#])";
 
         input = RemoveCharacterForStar(input); 
-        Console.WriteLine(input);
+        //Console.WriteLine(input);
         List<string> ResultData = new List<string>();
         MatchCollection matchedData = Regex.Matches(input, @"(\d)\1*"); 
 
