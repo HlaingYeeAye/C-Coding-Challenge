@@ -1,0 +1,49 @@
+#Old Phone Pad Decoder#
+
+#Overview#
+
+This C# program simulates an old mobile phone keypad input method to convert numeric sequences into text based on traditional multi-tap text input. 
+The program processes sequences of numbers (with optional special characters like * and #) and returns the corresponding text output.
+
+#Features#
+
+Converts numeric sequences into text according to old mobile phone keypads.
+
+Handles special characters:
+
+"*" removes the last entered character.
+
+"#" indicates the end of input but does not affect output.
+
+Accepts input as a string and processes it using regular expressions.
+
+#How It Works#
+
+The user provides a numeric input string (e.g., "“227*#").
+
+The program processes the input by:
+
+Removing characters based on * (backspace function).
+
+Segmenting consecutive identical digits.
+
+Mapping each segment to a letter from an old mobile phone keypad.
+
+The final decoded message is displayed in uppercase.
+
+#Installation & Setup#
+
+Clone the repository:
+
+git clone https://github.com/HlaingYeeAye/C-Coding-Challenge.git
+
+Navigate to the project folder:cd yourfolderName
+
+Ensure you have .NET installed:dotnet --version
+
+If not installed, download and install from Microsoft .NET
+
+Run the program: dotnet run
+
+#TestCase#
+I changed my input with various numbers to obtain my imagine result in Main() function. 

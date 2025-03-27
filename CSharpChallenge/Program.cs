@@ -1,14 +1,20 @@
-using System;
+﻿using System;
 using System.Text.RegularExpressions;
 using System.Collections.Generic;
 
-namespace HelloWorld
+namespace CSharpChallenge
 {
   class Program
   {
     static void Main(string[] args)
     {
-     List<string> arr = SeperateInput("8 88777444666*664#");
+     //String input ="33#";   //Result("E")
+     //String input ="227*#"; //Result("B")
+     //String input ="4433555 555666#";  //Result("HELLO")
+     //String input ="8 88777444666*664#";  //Result("TURIG")
+       String input ="44 999 20 833777788*";  //Result("HYA TEST")
+
+     List<string> arr = SeperateInput(input);
       
       Console.WriteLine("Segments:");
         foreach (var segment in arr)
